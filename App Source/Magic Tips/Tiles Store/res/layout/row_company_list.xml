@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_maincategory" >
+
+    <ImageView
+        android:id="@+id/imageThumb"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="3dp"
+        android:src="@drawable/no_thumb"
+        android:background="@drawable/roundercorner"
+        android:scaleType="fitStart"
+        android:layout_margin="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textMaincat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/textCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="TextView"
+            android:layout_marginRight="5dp"
+            android:textColor="#666"
+            android:textSize="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/min_icon_08" />
+
+            <TextView
+                android:id="@+id/textPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Phone :"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/min_icon_11"
+                 />
+
+            <TextView
+                android:id="@+id/TextFax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Fax :"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" >
+		     <ImageView
+                android:id="@+id/ImageView03"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/min_icon_14" />
+
+            <TextView
+                android:id="@+id/TextWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Web :"
+                android:textSize="10sp" />
+		    
+		</LinearLayout>
+      
+
+    </LinearLayout>
+
+</LinearLayout>

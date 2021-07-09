@@ -1,0 +1,4 @@
+1. User can add his Registration from his side.
+2. Offline mode easy load
+3. Home page main category set dynamic
+4. Remove GOLD and Feature listing and ADD "NEAR BY" option in it

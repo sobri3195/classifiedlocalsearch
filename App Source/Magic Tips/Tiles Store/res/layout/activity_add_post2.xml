@@ -1,0 +1,243 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/bg"
+    tools:context="com.way.magictips.AddPost2" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/sb_page_icon_01"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/header_icon_05" />
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/button1"
+            android:background="@drawable/xml_btn_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:text="Contact Details"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout01"
+        android:layout_centerInParent="true"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+	            <TextView
+	                android:id="@+id/txtViewAddress"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Address"
+	                android:textColor="#794e4e"
+	                android:textSize="10sp" />
+
+		            <EditText
+		                android:id="@+id/txtAddress"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:ems="10"
+		                android:background="@drawable/reg_assets_05"
+		                android:paddingLeft="8dp"
+		                android:singleLine="true" >
+		
+		                
+		            </EditText>
+			 </LinearLayout>
+            
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+				<LinearLayout
+				            android:layout_width="0dp"
+				            android:layout_height="wrap_content"
+				            android:orientation="vertical"
+				            android:layout_weight="1" >
+	            <TextView
+	                android:id="@+id/txtViewCity"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="City"
+	                android:textColor="#794e4e"
+	                android:textSize="10sp" />
+
+		            <EditText
+		                android:id="@+id/txtCity"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:ems="10"
+		                android:paddingLeft="8dp"
+		                android:background="@drawable/reg_assets_10"
+		                android:singleLine="true" >
+		
+		                
+		            </EditText>
+		          </LinearLayout>
+		          <LinearLayout
+				            android:layout_width="0dp"
+				            android:layout_height="wrap_content"
+				            android:orientation="vertical"
+				            android:layout_weight="1" >
+	            <TextView
+	                android:id="@+id/txtViewState"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="State"
+	                android:textColor="#794e4e"
+	                android:textSize="10sp" />
+
+		            <EditText
+		                android:id="@+id/txtState"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:ems="10"
+		                android:paddingLeft="8dp"
+		                android:background="@drawable/reg_assets_10"
+		                android:singleLine="true" >
+		
+		                
+		            </EditText>
+		          </LinearLayout>
+			 </LinearLayout>
+			 
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+				<LinearLayout
+				            android:layout_width="0dp"
+				            android:layout_height="wrap_content"
+				            android:orientation="vertical"
+				            android:layout_weight="1" >
+	            <TextView
+	                android:id="@+id/txtViewZip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Zip"
+	                android:textColor="#794e4e"
+	                android:textSize="10sp" />
+
+		            <EditText
+		                android:id="@+id/txtZip"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:ems="10"
+		                android:paddingLeft="8dp"
+		                android:singleLine="true"
+		                android:inputType="number"
+		                android:background="@drawable/reg_assets_10" >
+		
+		                
+		            </EditText>
+		          </LinearLayout>
+		          <LinearLayout
+				            android:layout_width="0dp"
+				            android:layout_height="wrap_content"
+				            android:orientation="vertical"
+				            android:layout_weight="1" >
+	            <TextView
+	                android:id="@+id/txtViewPhone"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Phone"
+	                android:textColor="#794e4e"
+	                android:textSize="10sp"
+	                 />
+
+		            <EditText
+		                android:id="@+id/txtPhone"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:ems="10"
+		                android:paddingLeft="8dp"
+		                android:singleLine="true"
+		                android:inputType="phone"
+		                android:background="@drawable/reg_assets_10" >
+		
+		                
+		            </EditText>
+		          </LinearLayout>
+			 </LinearLayout>
+            
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="20dp" >
+		      <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/xml_btn_small"
+                        android:text="Continue.."
+                        android:textStyle="bold" 
+                        android:textColor="#fff"/>
+		      </LinearLayout>
+		      
+            
+        </LinearLayout>
+    </LinearLayout>
+	<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp" >
+		      <ImageView 
+		          android:id="@+id/img"
+		          android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/step_2_05"/>
+		      <TextView 
+		          android:id="@+id/txt"
+		          android:layout_below="@+id/img"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Step 2 : Company Contact Details"
+	                android:textColor="#794e4e"
+	                android:textSize="14sp"
+	                android:layout_marginTop="10dp"
+		          />
+		      </RelativeLayout>
+</RelativeLayout>

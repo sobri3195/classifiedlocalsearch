@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="banner_ad_unit_id">ca-app-pub-9646970956622708/4807338678</string>
+	
+    <string name="app_name">Magic Trip</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_home_activiry">Magic Trip</string>
+    <string name="message">Magic Trip Message</string>
+    <string name="title_activity_company_list">Company List</string>
+    <string name="title_activity_company_details">Company Details</string>
+    <string name="title_activity_inquiry">Inquiry</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_company_main">CompanyMain</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_about__tiles_store">About Magic Trip</string>
+    <string name="title_activity_categories">Categories</string>
+    <string name="title_activity_show_route">Show Route</string>
+    <string name="dot">.</string>
+    <string name="title_activity_add_post">Add Post</string>
+    <string name="title_activity_add_post2">Add Post Step 2</string>
+    <string name="title_activity_add_post3">Add Post Step3</string>
+
+</resources>

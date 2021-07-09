@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="color_footer">#323232</drawable>
+    <drawable name="color_footer_hover">#999797</drawable>
+    
+    <drawable name="color_about_menubtn">#8da7da</drawable>    
+	<drawable name="color_about_menubtn_hover">#728574</drawable>
+	
+	<drawable name="color_about_menu1">#728574</drawable>
+	<drawable name="color_about_menu1_hover">#a3a8a3</drawable>
+	
+	<drawable name="color_about_menu2">#00cccb</drawable>
+	<drawable name="color_about_menu2_hover">#2e4444</drawable>
+	
+	<drawable name="color_about_menu3">#302727</drawable>
+	<drawable name="color_about_menu3_hover">#716e6e</drawable>
+	
+	<drawable name="color_home_menu1">#8da7da</drawable>
+	<drawable name="color_home_menu1_hover">#c4c7cf</drawable>
+	
+	<drawable name="color_home_menu2">#545b60</drawable>
+	<drawable name="color_home_menu2_hover">#a2a2a2</drawable>
+	
+	<drawable name="color_home_menu3">#003399</drawable>
+	<drawable name="color_home_menu3_hover">#4c7ee2</drawable>
+	
+	<drawable name="color_home_menu4">#373d42</drawable>
+	<drawable name="color_home_menu4_hover">#818283</drawable>
+	
+	<drawable name="color_home_menu5">#050f1a</drawable>
+	<drawable name="color_home_menu5_hover">#6c747c</drawable>
+	
+	<color name="white">#FFF</color>
+    <color name="l_blue">#fff</color>
+    <color name="d_blue">#6D7B92</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="d_gray">#666</color>
+    <color name="black">#000</color>
+		
+</resources>

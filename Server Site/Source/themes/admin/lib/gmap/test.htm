@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="aronotic" />
+
+	<title>Untitled 1</title>
+    <script type="text/javascript" src="modernizr.min.js"></script>
+    <style>
+        #map_canvas { width: 1024px; height: 400px;  }
+    </style>
+</head>
+
+<body>
+
+ <div id="map_canvas"></div>
+ 
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript" src="gmaps.js"></script>
+     
+		<script type="text/javascript">
+           var map;
+           var curPosLat;
+           var curPosLog;
+           $(document).ready(function(){
+				
+                 map = new GMaps({
+        div: '#map_canvas',
+        lat: 22.8025244,
+        lng: 70.8811511
+      });
+         map.addMarker({
+  lat: 22.8025244,
+  lng: 70.8811511,
+  title: 'Lima',
+  click: function(e) {
+    alert('You clicked in this marker');
+  }
+});
+      
+				GMaps.geolocate({
+  success: function(position) {
+    //map.setCenter(position.coords.latitude, position.coords.longitude);
+    curPosLat = position.coords.latitude;
+    curPosLog = position.coords.longitude;
+  },
+  error: function(error) {
+    alert('Geolocation failed: '+error.message);
+  },
+  not_supported: function() {
+    alert("Your browser does not support geolocation");
+  },
+  always: function() {
+   var a = confirm("take a route ?!");
+   if(a){
+    map.drawRoute({
+  origin: [curPosLat, curPosLog],
+  destination: [22.8025244, 70.8811511],
+  travelMode: 'driving',
+  strokeColor: '#131540',
+  strokeOpacity: 0.6,
+  strokeWeight: 6
+  
+});
+} 		
+
+  }
+});
+	
+    
+			});
+        </script>
+   
+
+</body>
+</html>

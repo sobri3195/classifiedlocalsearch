@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.way.magictips.AddPost3" >
+
+ 	<RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sb_page_icon_01"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/header_icon_05" />
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/button1"
+            android:background="@drawable/xml_btn_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:text="Select Category"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+ 	<Spinner
+ 	    android:id="@+id/spinner1"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:paddingLeft="10dp"
+ 	    android:background="@drawable/reg_assets_2_05"
+ 	    android:layout_below="@+id/RelativeLayout01" />
+
+ 	<ListView
+ 	    android:id="@+id/listView1"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_above="@+id/button2"
+ 	    android:layout_below="@+id/spinner1" >
+
+ 	</ListView>
+
+ 	<Button
+ 	    android:id="@+id/button2"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_alignParentRight="true"
+ 	    android:layout_margin="10dp"
+ 	    android:text="Finish Register"
+ 	    android:background="@drawable/xml_btn_small"
+ 	    android:layout_above="@+id/imageView1"
+ 	    android:textStyle="bold" 
+                        android:textColor="#fff"
+ 	     />
+	<LinearLayout
+	    android:id="@+id/imageView1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_alignParentBottom="true"
+	    android:padding="10dp">
+ 	<ImageView
+ 	    
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:src="@drawable/step_3_05"
+ 	    
+ 	     />
+
+ 	<TextView
+ 	    android:id="@+id/textView2"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:text="Step 3 : Finish registration by selecting category"
+ 	     android:textColor="#794e4e"
+	                android:textSize="14sp"
+	                android:layout_marginTop="10dp" />
+
+	</LinearLayout>
+	<include
+            android:id="@+id/progressBarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/progressbar_view" />
+</RelativeLayout>

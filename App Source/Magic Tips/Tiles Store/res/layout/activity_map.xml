@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent" >
+
+   <fragment
+       android:id="@+id/map"
+       android:name="com.google.android.gms.maps.MapFragment"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/RelativeLayout1" />
+
+   <RelativeLayout
+       android:id="@+id/RelativeLayout1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:background="@drawable/sb_page_icon_01"
+       android:padding="5dp" >
+
+       <Button
+           android:id="@+id/btnback"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:background="@drawable/xml_btn_back" />
+
+       <TextView
+           android:id="@+id/txtheader"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:text="Map View"
+           android:paddingRight="5dp"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="#484848"
+           android:textSize="14sp" />
+
+   </RelativeLayout>
+<com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
